@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 /* stylelint-disable no-descending-specificity */
 @charset "UTF-8";
 
@@ -2562,7 +2563,6 @@ textarea.form-control-lg {
   display: block;
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2642,7 +2642,6 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgb(0 0 0 / 25%);
   appearance: none;
-  color-adjust: 90%;
 }
 
 .form-check-input[type="checkbox"] {
@@ -4941,11 +4940,8 @@ fieldset:disabled .btn {
   right: 0;
   left: 0;
   z-index: 1030;
-  background-color:var(--bs-gray-700);
+  background-color: var(--bs-gray-700);
 }
-
-
-
 
 .fixed-bottom {
   position: fixed;
@@ -6055,7 +6051,7 @@ fieldset:disabled .btn {
 }
 
 .list-group-numbered > li::before {
-  content: counters (section, ".") ". ";
+  content: counter(section, ".") ". ";
   counter-increment: section;
 }
 
@@ -12193,6 +12189,7 @@ fieldset:disabled .btn {
   text-transform: uppercase;
   font-family: lato, sans-serif;
   background-image: linear-gradient(75deg, #ec5242, #272a31, #ec5242);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -12295,7 +12292,7 @@ fieldset:disabled .btn {
   display: block;
 }
 
-.hasHover {
+/* .hasHover {
   position: relative;
   width: 80%;
 }
@@ -12319,7 +12316,7 @@ fieldset:disabled .btn {
 
 .hasHover:hover .abso {
   display: none;
-}
+} */
 
 .join {
   background: #ec5242;
@@ -12377,7 +12374,7 @@ fieldset:disabled .btn {
     display: none;
   }
 
-  .hasHover {
+  .hashover {
     margin-bottom: 0.8rem;
   }
 }
