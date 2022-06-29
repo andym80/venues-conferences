@@ -1,5 +1,10 @@
 {
   "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
     "jshint": "^2.13.4"
+  },
+  "devDependencies": {
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   }
 }
