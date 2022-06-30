@@ -8,7 +8,8 @@
  https://summit.cckorea.org/main created by Cindy Shin in Behance.
 
 
-**Preview link** https://andym80.github.io/capstone-1/
+## Live Demo
+Live demo [link](https://andym80.github.io/Capstone-1/) to my project
 
 ## Built With
 
@@ -49,6 +50,11 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
+ Original design created by
+                             [Cindy Shin](https://www.behance.net/cindyshin)
+
+(https://summit.cckorea.org/main)
 
 - Hat tip to anyone whose code was used
 - Inspiration
