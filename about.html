@@ -7,6 +7,7 @@
 	<title>Capstone 1</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
 			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,10 +22,10 @@
 					<a href="" class="mx-3 text-white">English</a>
 					<a href="" class="mx-3 text-white">MyPage</a>
 					<a href="" class="mx-3 text-white">Logout</a>
-
 				</nav>
 			</header>
-			<div class=" d-none d-md-block bg-light text-dark container-fluid px-5 py-3 shadow">
+
+			<div class="d-none d-md-block text-dark container-fluid px-5 py-3 shadow" id="whitenav">
 				<div class="row">
 					<div class="col-4 d-flex align-items-center justify-content-center">
 						<a href="index.html" class="d-flex flex-column">
@@ -41,8 +42,8 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
+
 			<div class="d-block d-md-none">
 				<div class="d-flex flex-column justify-content-start mx-4 toggle-button mt-4 ">
 					<span></span>
@@ -51,6 +52,8 @@
 				</div>
 			</div>
 		</div>
+
+
 		<section class="sidebar">
 			<div class="sidebar-inner">
 				<div class="sidebar-cancel">
@@ -62,58 +65,49 @@
 					<a href="#program" class="anchor-link">Program</a>
 				</div>
 			</div>
+
 		</section>
-		<section class="hero container-fluid py-5">
+
+		<section class="hero container-fluid py-5 mt-5">
 			<div class="hero-inner text-center mt-5">
-				<h4 class="display-hello">"About"</h4>
-				<div class="mx-0">
-					<h1 class="display-title">LiveLoop<br> 2022</h1>
-				</div>
-				<div class="">
-					<p class="d-flex justify-content-center text-center align-content-center bg-white">A joyfull celebration believing in the value of Music and Technology and
+				<h4 class="display-hello pt-5" id="title-about">"Music & Technology Global Conference"</h4>
+					<p class="bg-white d-flex justify-content-center text-center align-content-center pt-5 pb-lg-5">A joyfull celebration believing in the value of Music and Technology and
 						creating a positive change with people is taking place in June in Buenos Aires, Argentina</p>
-				</div>
-				<h2 class="display-h2">2022.06.15(fri)~ 16(sat)</h2>
-				<h5 class="display-h5">@CCK Audithory</h5>
+				<p class="display-6 text-center" >Past events</p>
+				<p class="text-center">Take a look at the recent global conference held in Buenos Aires, Argentina and Warsaw, Poland.</p>
 			</div>
+<div class="text-center mt-auto">
+	<a href="" class="btn" target="_blank">
+<img src="./images/about_2011_hover.png" alt="about2011" id="2011pic" class="redhover"></a>
+<a href="" class="btn" target="_blank">
+<img src="./images/about_2013_hover.png" alt="about2013" id="2013pic" class="redhover"></a>
+</div>
+
+
 
 		</section>
 
-		<footer>
-			<div class="footer-upper py-4  mx-0 mb-3">
-				<h5 class="text-center ">Partners</h5>
-				<div class="horizontal-line mb-4"></div>
-				<div class="row d-flex justify-content-center align-items-center">
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo"> <img src="./images/sennheiser-logo-blk.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2 ">
-						<div class="companies__logo "> <img src="./images/ableton.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo "> <img src="./images/dante.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo "> <img src="./images/airbnb-logo-2020.svg" alt="company logo">
-						</div>
-					</div>
-				</div>
+		<section>
+
+			<footer>
+
+			<div class="card text-left align-content-center" id="cc-card">
+			<div class="row">
+			<div class="col-md-4">
+				<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons license" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons license</a>
+				<img src="./images/cclogowhite.svg" class="img-responsive" alt="cclogo"/>
+
 			</div>
-			<div class="row footer-down mt-5 mb-3 p-5">
-				<div class=" col-6 col-md-4 d-flex justify-content-end">
-					<div class="d-flex flex-column">
-						<span class="dark-span">Technology </span>
-						<span class="dark-span">Conference</span>
-					</div>
+			<div class="col-md-8">
+				<p class="card-text mt-sm-5 ps-3"><small class="text-muted">2022 Creative Commons. Some Rights Reserved.All content on the website, unless otherwise specified, is available under a Creative Commons Attribution 2.0 license. Please see http://creativecommons.org/licences/by/2.0/kr
+					for detailed usage function details and permission conditions . Creative Commons LiveLoop is committed to providing a harassment-free meeting experience for all.<br> See our Code of Conduct and Non-Infringement Policy</small></p>
 				</div>
-				<div class="col-6 col-md-8 d-flex justify-content-start">
-					<h5 class="text-capitalize ml-5">2015 creative common. some right reserverd</h5>
-				</div>
+
 			</div>
-		</footer>
+			</div>
+			</footer>
+			</section>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 			crossorigin="anonymous"></script>

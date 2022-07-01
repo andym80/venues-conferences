@@ -7,7 +7,8 @@
 	<title>Capstone 1</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
 			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	</head>
@@ -21,9 +22,13 @@
 					<a href="" class="mx-3 text-white">English</a>
 					<a href="" class="mx-3 text-white">MyPage</a>
 					<a href="" class="mx-3 text-white">Logout</a>
+				</nav>
+			</header>
 
 
-			<div class="d-none d-md-block bg-light text-dark container-fluid px-5 py-3 shadow">
+
+
+			<div class="d-none d-md-block text-dark container-fluid px-5 py-3 shadow" id="whitenav">
 				<div class="row">
 					<div class="col-4 d-flex align-items-center justify-content-center">
 						<a href="index.html" class="d-flex flex-column">
@@ -40,10 +45,8 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
-		</nav>
-	</header>
+
 			<div class="d-block d-md-none">
 				<div class="d-flex flex-column justify-content-start mx-4 toggle-button mt-4 ">
 					<span></span>
@@ -52,6 +55,8 @@
 				</div>
 			</div>
 		</div>
+
+
 		<section class="sidebar">
 			<div class="sidebar-inner">
 				<div class="sidebar-cancel">
@@ -63,15 +68,16 @@
 					<a href="#program" class="anchor-link">Program</a>
 				</div>
 			</div>
+
 		</section>
-		<section class="hero container-fluid py-5">
-			<div class="hero-inner py-5">
+		<section class="hero container-fluid py-5 fs-1">
+			<div class="hero-inner py-5 ">
 				<h4 class="display-hello">"Hello community!"</h4>
 				<div class="mx-0">
-					<h1 class="text-uppercase display-title">LiveLoop<br> 2022</h1>
+					<h1 class="text-uppercase display-title" id="title-index">LiveLoop<br> 2022</h1>
 				</div>
 				<div class="para-container">
-					<p class="display-paragrapg w-75 text-capitalize">A joyfull celebration believing in the value of Music and Technology and
+					<p class="bg-white display-paragrapg w-80">A joyfull celebration believing in the value of Music and Technology and
 						creating a positive change with people is taking place in June in Buenos Aires, Argentina</p>
 				</div>
 				<h2 class="display-h2">2022.06.15(fri)~ 16(sat)</h2>
@@ -79,8 +85,9 @@
 			</div>
 
 		</section>
-		<section class="program mt-4 bg-dark py-4 container-fluid " id="program">
-			<h4 class="text-center text-white fw-bold text-capitalize mt-4 ">Main Program</h4>
+
+		<section class="program mt-4 bg-gray-900 py-4 container-fluid" id="program">
+			<h4 class="text-center fw-bold text-capitalize mt-4" id="program-title">Main Program</h4>
 			<div class="horizontal-line mb-4 pb-4"></div>
 			<div class="row d-flex justify-content-center mb-5">
 				<div class="col-12 col-md-4 col-lg-2">
@@ -88,10 +95,10 @@
 						<div class="card-body ">
 							<div class="icon d-flex flex-column justify-content-center">
 								<i class="fa fa-school icons pt-2 text-center"></i>
-								<h5 class="card-title text-center  pb-2 ml-3">Lecture</h5>
+								<h5 class="card-title text-center pb-2 ml-3">Lecture</h5>
 							</div>
 
-							<p class="card-text text-center text-white small pb-3">Listen to the speakers from various countries about
+							<p class="card-text text-center text-bg-light small pb-3">Listen to the speakers from various countries about
 								the messages of sharing and opening.</p>
 						</div>
 					</div>
@@ -104,7 +111,7 @@
 								<h5 class="card-title text-center  pb-2">Exhibition</h5>
 							</div>
 
-							<p class="card-text text-center text-white small pb-3">Listen to the speakers from various countries about
+							<p class="card-text text-center text-bg-light small pb-3">Listen to the speakers from various countries about
 								the messages of sharing and opening.</p>
 						</div>
 					</div>
@@ -117,7 +124,7 @@
 								<h5 class="card-title text-center  pb-2">Forum</h5>
 							</div>
 
-							<p class="card-text text-center text-white small pb-3">Listen to the speakers from various countries about
+							<p class="card-text text-center text-bg-light small pb-3">Listen to the speakers from various countries about
 								the messages of sharing and opening.</p>
 						</div>
 					</div>
@@ -130,7 +137,7 @@
 								<h5 class="card-title text-center  pb-2">Workshop</h5>
 							</div>
 
-							<p class="card-text text-center text-white small pb-3">Listen to the speakers from various countries about
+							<p class="card-text text-center text-bg-light small pb-3">Listen to the speakers from various countries about
 								the messages of sharing and opening.</p>
 						</div>
 					</div>
@@ -143,7 +150,7 @@
 								<h5 class="card-title text-center  pb-2">Ignite</h5>
 							</div>
 
-							<p class="card-text text-center text-white small pb-3">Listen to the speakers from various countries about
+							<p class="card-text text-center text-bg-light small pb-3">Listen to the speakers from various countries about
 								the messages of sharing and opening.</p>
 						</div>
 					</div>
@@ -151,7 +158,7 @@
 			</div>
 			<p class="text-white text-center text-uppercase my-3 underline-text hide-mobile small p-5">See the whole Programm</p>
 			<div class="join text-white text-capitalize show-mobile">
-				join Robotics Confrance 2022
+				join Music & Techology Conference 2022
 			</div>
 		</section>
 
@@ -167,41 +174,27 @@
 			</div>
 
 		</section>
-		<footer>
-			<div class="footer-upper py-4  mx-0 mb-3">
-				<h5 class="text-center ">Partners</h5>
-				<div class="horizontal-line mb-4"></div>
-				<div class="row d-flex justify-content-center align-items-center">
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo"> <img src="./images/sennheiser-logo-blk.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2 ">
-						<div class="companies__logo "> <img src="./images/ableton.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo "> <img src="./images/dante.png" alt="company logo">
-						</div>
-					</div>
-					<div class="col-6 col-md-4 col-lg-2">
-						<div class="companies__logo "> <img src="./images/airbnb-logo-2020.svg" alt="company logo">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row footer-down mt-5 mb-3 p-5">
-				<div class=" col-6 col-md-4 d-flex justify-content-end">
-					<div class="d-flex flex-column">
-						<span class="dark-span">Technology </span>
-						<span class="dark-span">Conference</span>
-					</div>
-				</div>
-				<div class="col-6 col-md-8 d-flex justify-content-start">
-					<h5 class="text-capitalize ml-5">2015 creative common. some right reserverd</h5>
-				</div>
-			</div>
-		</footer>
+<section>
+
+<footer>
+
+<div class="card text-left align-content-center" id="cc-card">
+<div class="row">
+<div class="col-md-4">
+	<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons license" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons license</a>
+	<img src="./images/cclogowhite.svg" class="img-responsive" alt="cclogo"/>
+
+</div>
+<div class="col-md-8">
+	<p class="card-text mt-sm-5 ps-3"><small class="text-muted">2022 Creative Commons. Some Rights Reserved.All content on the website, unless otherwise specified, is available under a Creative Commons Attribution 2.0 license. Please see http://creativecommons.org/licences/by/2.0/kr
+		for detailed usage function details and permission conditions . Creative Commons LiveLoop is committed to providing a harassment-free meeting experience for all.<br> See our Code of Conduct and Non-Infringement Policy</small></p>
+	</div>
+
+</div>
+</div>
+</footer>
+</section>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 			crossorigin="anonymous"></script>

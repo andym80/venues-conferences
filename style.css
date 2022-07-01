@@ -2985,9 +2985,8 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0;
 }
 
-.input-group > :not(:first-child,
-.dropdown-menu, .valid-tooltip,
-.valid-feedback, .invalid-tooltip, .invalid-feedback) {
+/* stylelint-disable-next-line max-line-length */
+.input-group > :not(:first-child, .dropdown-menu, .valid-tooltip, .valid-feedback, .invalid-tooltip, .invalid-feedback) {
   margin-left: -1px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -4839,13 +4838,7 @@ fieldset:disabled .btn {
 }
 
 .placeholder-wave {
-  mask-image:
-    linear-gradient(
-      130deg,
-      #000 55%,
-      rgb(0 0 0 / 80%) 75%,
-      #000 95%
-    );
+  mask-image: linear-gradient(130deg, #000 55%, rgb(0 0 0 / 80%) 75%, #000 95%);
   mask-size: 200% 100%;
   animation: placeholder-wave 2s linear infinite;
 }
@@ -8342,8 +8335,8 @@ fieldset:disabled .btn {
 }
 
 .py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
 }
 
 .pt-0 {
@@ -8674,11 +8667,7 @@ fieldset:disabled .btn {
 .bg-primary {
   --bs-bg-opacity: 1;
 
-  background-color:
-    rgb(
-      var(--bs-primary-rgb)
-      var(--bs-bg-opacity)
-    ) !important;
+  background-color: rgb(var(--bs-primary-rgb) var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -8686,19 +8675,14 @@ fieldset:disabled .btn {
 
   background-color:
     rgb(
-      var(--bs-secondary-rgb)
-      var(--bs-bg-opacity)
+      var(--bs-secondary-rgb) var(--bs-bg-opacity)
     ) !important;
 }
 
 .bg-success {
   --bs-bg-opacity: 1;
 
-  background-color:
-    rgb(
-      var(--bs-success-rgb)
-      var(--bs-bg-opacity)
-    ) !important;
+  background-color: rgb(var(--bs-success-rgb) var(--bs-bg-opacity)) !important;
 }
 
 .bg-info {
@@ -8710,11 +8694,7 @@ fieldset:disabled .btn {
 .bg-warning {
   --bs-bg-opacity: 1;
 
-  background-color:
-    rgb(
-      var(--bs-warning-rgb)
-      var(--bs-bg-opacity)
-    ) !important;
+  background-color: rgb(var(--bs-warning-rgb) var(--bs-bg-opacity)) !important;
 }
 
 .bg-danger {
@@ -8750,11 +8730,7 @@ fieldset:disabled .btn {
 .bg-body {
   --bs-bg-opacity: 1;
 
-  background-color:
-    rgb(
-      var(--bs-body-bg-rgb)
-      var(--bs-bg-opacity)
-    ) !important;
+  background-color: rgb(var(--bs-body-bg-rgb) var(--bs-bg-opacity)) !important;
 }
 
 .bg-transparent {
@@ -12183,11 +12159,27 @@ fieldset:disabled .btn {
   }
 }
 
+#whitenav {
+  background-color: #fff;
+}
+
+#title-about {
+  font-family: cocogoose, sans-serif;
+  font-size: 6vw;
+  font-weight: 500;
+}
+
+#partners {
+  font-size: 1.8vw;
+  color: black;
+  font-family: lato, serif;
+}
+
 .display-title {
-  font-size: 4.5rem;
-  font-weight: 800;
+  font-size: 6vw;
+  font-weight: 500;
   text-transform: uppercase;
-  font-family: lato, sans-serif;
+  font-family: cocogoose, sans-serif;
   background-image: linear-gradient(75deg, #ec5242, #272a31, #ec5242);
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-background-clip: text;
@@ -12203,7 +12195,7 @@ fieldset:disabled .btn {
 }
 
 .display-paragraph {
-  font-size: 1rem;
+  font-size: 3rem;
   color: #272a31;
   font-family: lato, sans-serif;
 }
@@ -12292,31 +12284,14 @@ fieldset:disabled .btn {
   display: block;
 }
 
-/* .hasHover {
-  position: relative;
-  width: 80%;
+.redhover {
+  filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
 }
 
-.hasHover img {
-  width: 100%;
-  height: 100%;
+.redhover:hover {
+  filter: grayscale(100%) brightness(100%);
+  transition: all 0.3s ease-in-out;
 }
-
-.hasHover .abso {
-  position: absolute;
-  background: #ec5242;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-}
-
-.hasHover:hover .abso {
-  display: none;
-} */
 
 .join {
   background: #ec5242;
@@ -12425,6 +12400,12 @@ fieldset:disabled .btn {
 
 .program {
   position: relative;
+  padding: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+  text-align: center;
+  background: var(--bs-gray-900);
+  border-radius: 0.5rem;
 }
 
 .program .card {
@@ -12434,6 +12415,7 @@ fieldset:disabled .btn {
 
 .program .card-body {
   position: relative;
+  color: white;
 }
 
 .program .icons {
@@ -12448,6 +12430,11 @@ fieldset:disabled .btn {
 
 .program .underline-text {
   text-decoration: underline;
+  color: #fff;
+}
+
+#program-title {
+  color: #fff;
 }
 
 @media screen and(max-width: 767px) {
@@ -12483,16 +12470,17 @@ fieldset:disabled .btn {
 footer {
   position: relative;
   width: 100%;
-}
-
-.footer-upper {
-  background: #272a31;
+  background-color: #272a31;
 }
 
 .footer-upper h5 {
   color: #d3d3d3;
   font-size: 1.3rem;
   text-transform: capitalize;
+}
+
+#cc-card {
+  background-color: #2e2e2e;
 }
 
 .companies__logo {
